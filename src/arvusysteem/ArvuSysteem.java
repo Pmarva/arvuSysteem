@@ -15,8 +15,14 @@ public class ArvuSysteem {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Number n1 = new Number("100",10);
+        try {
+            Number n1 = new Number("1002",2);
+            System.out.println(n1.toBin());
+    
+        } catch(NumberFormatException e) {
+            System.out.println("Sisendiks vigane number");
+        }
+        
                
-        System.out.println(n1.toBin());
-    }
+    }    
 }
