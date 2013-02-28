@@ -27,6 +27,8 @@ public class ArvuSysteem {
     
         } catch(NumberFormatException e) {
             System.out.println("Sisendiks vigane number");
+        } catch(Exception e) {
+            System.out.println("Tundmatu viga");
         }
         
                
