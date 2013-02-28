@@ -20,10 +20,10 @@ public class ArvuSysteem {
             int systeem=8;
             Number n1 = new Number(number,systeem);
             System.out.println("Algne arv "+number+ " systeemis "+systeem);
-            System.out.println("Binaar "+n1.toBin());
-            System.out.println("Kymnend "+n1.toDec());
-            System.out.println("Kuusteist "+n1.toHex());
-            System.out.println("Kaheksa "+n1.toOct());
+            System.out.println("Binaar "+n1.toX(2));
+            System.out.println("Kymnend "+n1.toX(10));
+            System.out.println("Kuusteist "+n1.toX(16));
+            System.out.println("Kaheksa "+n1.toX(8));
            
     
         } catch(NumberFormatException e) {
