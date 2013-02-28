@@ -30,21 +30,4 @@ public class Number {
     public String toX(int radix) {
         return new BigInteger(number,2).toString(radix);
     }
-    /*
-    public String toDec() {
-         return new BigInteger(number,2).toString(10);
-    }
-    
-    public String toHex() {
-         return new BigInteger(number,2).toString(16);
-    }
-    
-    public String toOct() {
-         return new BigInteger(number,2).toString(8);
-    }
-    
-    public String toBin() {
-         return number;
-    }
-    */
 }
