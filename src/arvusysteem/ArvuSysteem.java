@@ -24,7 +24,7 @@ public class ArvuSysteem {
             System.out.println("Kymnend "+n1.toDec());
             System.out.println("Kuusteist "+n1.toHex());
             System.out.println("Kaheksa "+n1.toOct());
-            System.out.println(0x10);
+           
     
         } catch(NumberFormatException e) {
             System.out.println("Sisendiks vigane number");
