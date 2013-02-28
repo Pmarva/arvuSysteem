@@ -24,7 +24,6 @@ public class ArvuSysteem {
             System.out.println("Kymnend "+n1.toX(10));
             System.out.println("Kuusteist "+n1.toX(16));
             System.out.println("Kaheksa "+n1.toX(8));
-           
     
         } catch(NumberFormatException e) {
             System.out.println("Sisendiks vigane number");

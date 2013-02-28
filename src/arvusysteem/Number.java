@@ -12,13 +12,23 @@ import java.math.BigInteger;
  */
 public class Number {
 
-    String number;
-    public Number(String number,int arvusysteem){
-        this.number=new BigInteger(number,arvusysteem).toString(2);
-    }
+    private String number;
     
-    public String toX(int toArvuSysteem) {
-        return new BigInteger(number,2).toString(toArvuSysteem);
+    /**
+     * 
+     * @param number number mida tahetakse teisendada 
+     * @param radix  arvusüsteem milles number on.
+     */
+    public Number(String number,int radix){
+        this.number=new BigInteger(number,radix).toString(2);
+    }
+    /**
+     * Teisendab ühest arvusüsteemist teise.
+     * @param radix arvusüsteem,millesse tahetakse teisendada.
+     * @return 
+     */
+    public String toX(int radix) {
+        return new BigInteger(number,2).toString(radix);
     }
     /*
     public String toDec() {
