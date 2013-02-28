@@ -15,5 +15,8 @@ public class ArvuSysteem {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Number n1 = new Number("100",10);
+               
+        System.out.println(n1.toBin());
     }
 }
