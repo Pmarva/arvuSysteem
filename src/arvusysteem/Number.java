@@ -17,6 +17,10 @@ public class Number {
         this.number=new BigInteger(number,arvusysteem).toString(2);
     }
     
+    public String toX(int toArvuSysteem) {
+        return new BigInteger(number,2).toString(toArvuSysteem);
+    }
+    /*
     public String toDec() {
          return new BigInteger(number,2).toString(10);
     }
@@ -32,4 +36,5 @@ public class Number {
     public String toBin() {
          return number;
     }
+    */
 }
